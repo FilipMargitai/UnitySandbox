@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    [HideInInspector]
-    public float mouseX;
-    [HideInInspector]
-    public float mouseY;
-
     public float mouseSensitivity = 500f;
 
+    private float mouseX;
+    private float mouseY;
     private float xRotation = 0f;
-    [HideInInspector]
-    public Transform playerBody;
+    private Transform playerBody;
     // Start is called before the first frame update
     void Start()
     {
